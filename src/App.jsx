@@ -23,9 +23,11 @@ function App() {
     <>
       <div className="App">
         <h1>Carga de estudiantes</h1>
-        <Formulario handleSubmit={handleSubmit}  setStudentName={setStudentName} setStudentColor={setStudentColor}/>
+        <Formulario handleSubmit={handleSubmit}  setStudentName={setStudentName} setStudentColor={setStudentColor}>
+          <Card studentName={studentName} studentColor={studentColor}/>
+        </Formulario>
         
-        <Card studentName={studentName} studentColor={studentColor}/>
+        
       </div>
     </>
   );
